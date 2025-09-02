@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package rocktree;
+
+// Example RockTree message
+message RockTree {
+  string name = 1;
+  int32 age = 2;
+  TreeType type = 3;
+  repeated Branch branches = 4;
+}
+
+message Branch {
+  string name = 1;
+  double length = 2;
+  int32 leaf_count = 3;
+}
+
+enum TreeType {
+  TREE_TYPE_UNKNOWN = 0;
+  TREE_TYPE_OAK = 1;
+  TREE_TYPE_PINE = 2;
+  TREE_TYPE_MAPLE = 3;
+  TREE_TYPE_BIRCH = 4;
+}
