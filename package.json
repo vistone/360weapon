@@ -1,0 +1,17 @@
+{
+  "name": "zeromaps-ts",
+  "version": "1.0.0",
+  "description": "TypeScript protobuf project",
+  "main": "index.js",
+  "scripts": {
+    "proto": "protoc --plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts --ts_out=./src/proto --proto_path=src/proto src/proto/RockTree.proto",
+    "proto-simple": "protoc --ts_out=./src/proto --proto_path=src/proto src/proto/RockTree.proto"
+  },
+  "devDependencies": {
+    "@protobuf-ts/plugin": "^2.9.4"
+  },
+  "dependencies": {
+    "@protobuf-ts/runtime": "^2.9.4",
+    "@protobuf-ts/runtime-rpc": "^2.9.4"
+  }
+}
