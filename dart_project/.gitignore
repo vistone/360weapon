@@ -1,0 +1,47 @@
+# Dart 相关
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# 文档生成
+doc/api/
+
+# 测试覆盖率
+coverage/
+
+# IDE 相关
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+.tmp/
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 编译输出
+*.exe
+*.dll
+*.so
+*.dylib
